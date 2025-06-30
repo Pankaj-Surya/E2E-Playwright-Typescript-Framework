@@ -17,18 +17,20 @@ export class HomePage {
         this.loginTxt = page.getByRole('heading', { name: 'Returning Customer' });
     }
 
-    async naviagteToApp(){
+    private async naviagteToApp() {
         await this.page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=common/home");
     }
 
-    async navigateToRegister() {
+    async navigateToRegisterPage() {
+        await this.naviagteToApp();
         await this.myAccountBtn.hover();
         await this.registerBtn.click();
         //await this.page.waitForURL("**/register");
         await expect(this.registerTxt).toBeVisible();
     }
 
-    async navigateToLogin() {
+    async navigateToLoginPage() {
+        await this.naviagteToApp();
         await this.myAccountBtn.hover();
         await this.loginBtn.click();
         await this.page.waitForURL("**/login");

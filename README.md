@@ -26,6 +26,9 @@ Here’s a complete guide to **creating and configuring a GitHub Organization**,
 
 ---
 
+<!-- USERNAME="djdjd@gmail.com"
+PASSWORD="qY4f!gu8QmN2prq" -->
+
 ## ✅ Part 2: Post-Creation Setup – Team & Access Management
 
 ### 🔹 Step 1: Add Members to Your Organization
