@@ -1,0 +1,22 @@
+{
+  "name": "playwright-framework-2025",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rinaldopankaj/PlaywrightTSFramework2025.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rinaldopankaj/PlaywrightTSFramework2025/issues"
+  },
+  "homepage": "https://github.com/rinaldopankaj/PlaywrightTSFramework2025#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.53.1",
+    "@types/node": "^24.0.4"
+  }
+}
