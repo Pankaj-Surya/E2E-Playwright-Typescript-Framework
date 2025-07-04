@@ -14,6 +14,35 @@ Here’s a complete guide to **creating and configuring a GitHub Organization**,
 
 ---
 
+npm install cross-env dotenv
+npm install -g cross-env
+
+dotenv.config({
+  path: process.env.NODE_ENV ? `./env-files/.env.${process.env.NODE_ENV}` : `./env-files/.env.dev`
+})
+
+console.log(`Loaded environment: ${process.env.NODE_ENV}`);
+console.log('Environment variables:', {
+  BASE_URL: process.env.BASE_URL,
+  // Add more as needed
+});
+
+
+npx cross-env ENV=dev
+
+ npx cross-env NODE_ENV=prod  npx playwright test .\tests\Login\login-positive.test.ts
+
+"scripts": {
+  "test:dev": "npx cross-env NODE_ENV=dev playwright test",
+  "test:test": "npx cross-env NODE_ENV=test playwright test",
+  "test:prod": "npx cross-env NODE_ENV=prod playwright test"
+}
+
+npm run test:dev
+npm run test:prod
+
+===========================
+
 ## ✅ Part 1: How to Create a GitHub Organization (Recap)
 
 ### 🪜 Steps (Already Done by You)
