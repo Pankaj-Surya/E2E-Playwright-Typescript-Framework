@@ -18,7 +18,7 @@ export class HomePage {
     }
 
     private async naviagteToApp() {
-        await this.page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=common/home");
+        await this.page.goto(process.env.BASE_URL!);
     }
 
     async navigateToRegisterPage() {
