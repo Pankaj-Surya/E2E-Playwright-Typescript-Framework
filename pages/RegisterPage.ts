@@ -1,6 +1,7 @@
 import { Locator, Page } from "@playwright/test";
+import { BasePage } from "./BasePage";
 
-export class RegisterPage {
+export class RegisterPage extends BasePage {
 
     //Locator
     private readonly firstnameTxtbox: Locator;
@@ -16,6 +17,7 @@ export class RegisterPage {
 
     //Constructor
     constructor(private page: Page) {
+        super();
         this.firstnameTxtbox = this.page.getByRole('textbox', { name: 'First Name*' })
         this.lastnameTxtbox = this.page.getByRole('textbox', { name: 'Last Name*' });
         this.emailTxtbox = this.page.getByRole('textbox', { name: 'E-Mail*' });
@@ -43,13 +45,10 @@ export class RegisterPage {
     }
 
     async submit(agree: boolean) {
-        agree ? await this.privacyChkbox.click() : '';
+        // agree ? await this.privacyChkbox.click() : '';
+        agree ? await this.interaction.selectCheckBox(this.privacyChkbox, "privacy CheckBox") : '';
         await this.continueBtn.click();
 
     }
-
-
-
-
 
 }
