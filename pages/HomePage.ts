@@ -1,4 +1,5 @@
 import { expect, Locator, Page } from '@playwright/test';
+import * as allure from 'allure-js-commons'
 
 export class HomePage {
 
@@ -19,14 +20,20 @@ export class HomePage {
 
     private async naviagteToApp() {
         await this.page.goto(process.env.BASE_URL!);
+
     }
 
+
+
     async navigateToRegisterPage() {
-        await this.naviagteToApp();
-        await this.myAccountBtn.hover();
-        await this.registerBtn.click();
-        //await this.page.waitForURL("**/register");
-        await expect(this.registerTxt).toBeVisible();
+        await allure.step('NavigateToRegister', async () => {
+            await this.naviagteToApp();
+            await this.myAccountBtn.hover();
+            await this.registerBtn.click();
+            //await this.page.waitForURL("**/register");
+            await expect(this.registerTxt).toBeVisible();
+        })
+
     }
 
     async navigateToLoginPage() {

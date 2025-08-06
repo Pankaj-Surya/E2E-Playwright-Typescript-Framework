@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","24030","TC101 - Login with valid Credentials","chromium","Thu Jul 31 20:36:30 IST 2025","passed","Thu Jul 31 20:36:54 IST 2025","Login Positive Scenario","Login\login-positive.test.ts","",""
+"","24307","TC001 - Regsiter with valid cred","chromium","Thu Jul 31 20:36:30 IST 2025","passed","Thu Jul 31 20:36:55 IST 2025","Register Positive Scenario","Register\register-positive.test.ts","",""

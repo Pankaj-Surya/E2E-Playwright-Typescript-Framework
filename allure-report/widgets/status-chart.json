@@ -1,0 +1,1 @@
+[{"uid":"987fe412aeb9ba8d","name":"TC101 - Login with valid Credentials","time":{"start":1753974390817,"stop":1753974414847,"duration":24030},"status":"passed","severity":"normal"},{"uid":"1444a543c01b6d3a","name":"TC001 - Regsiter with valid cred","time":{"start":1753974390876,"stop":1753974415183,"duration":24307},"status":"passed","severity":"normal"}]

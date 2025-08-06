@@ -2,8 +2,8 @@
   "name": "playwright-framework-2025",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js", 
-   "type": "module",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
     "test:dev": "cross-env NODE_ENV=dev playwright test",
     "test:test": "cross-env NODE_ENV=test playwright test",
@@ -25,6 +25,7 @@
     "@types/node": "^24.0.4"
   },
   "dependencies": {
+    "allure-playwright": "^3.3.2",
     "cross-env": "^7.0.3",
     "dotenv": "^17.0.1",
     "glob": "^11.0.3"
